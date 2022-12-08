@@ -1,0 +1,46 @@
+SORU 3. Java’nın platform bağımsızlığını nasıl sağladığını anlatınız
+
+Javanınn platform bağımsız bir dil olması java için çok önemli bir özelliktir. 
+c,c# gibi dillerde yazılan koldlar derlenip 0 ve 1 lerden oluşan kodlara çevrilirler.
+Bu iyi bir özellik gibi görünsede değildir. Çünkü windowsta yazılan kod sadece windowsta 
+kullanılabilir.Diğer işletim sistemlerinde kullanmak için yeniden yazmak gerekir.Fakat javada
+bunu sağllayan derleyiciler vardır. JVM denilen sanal makine yazılan kodları bytcode olarak derler.
+bu sayede kodlar nerde açılırsa açılsın aynı şekilde çalışmaya devam eder.Buna "Bir yerde yaz her yerde çalıştır 
+prensibi." denir.Bu da bize javanın platform bağımsız bir dil olduğunu gösterir.
+
+SORU 4. Java’da heap ve stack kavramlarını örneklerle açıklayın
+
+Yazdığımız kodlar işletim sisteminde bir yer kaplar.Bu yerlerin kapladıkları boyutlar her zaman
+kesin ve değişmez değildir. Bu sebepten değerlerin RAM'de saklandığı iki farklı yer vardır.Bunlara
+stack ve heap denir.Değer tip (value type) denilen int, short, byte, long, decimal, double, float gibi 
+tipler stackte tutulur.Stackte gelen derğerler üst üste yerleştirilir mantığı vardır.Bunu üst üste koyduğumuz 
+tabaklara benzetebiliriz.En alttaki tabağı almamız için sırasıyla üsttekileri indirmemiz gerekir gibi düşünülebilir.
+Class type değişkenler referans tiplerdir referans ettikleri model (referans) stackte değerleri ise heapde saklanır.Heapte 
+veriler karışık bir şekilde sıralanır.Bundan dolayı heapte yer alan bir veriye erişmek daha maliyetlidir.
+ Stack bellekteki veri hemen silinirken Heap bellekteki verinin silinmesi çöp toplama mekanizmasına bağlıdır.
+Kullanacağımız yerin boyutunu tam olarak biliyorsak Stack, ihtiyacımız olan boyutu tam olarak bilmiyorsak
+ Heap kullanımı daha mantıklı bir tercih olur.
+
+
+SORU 6. Java neden çoklu kalıtımı desteklemez açıklayın
+A,B,C nin üç sınıf olduğunu düşünelim.C sınıfı A ve B sınıflarını miras aldığında Ave B sınıfları aynı yönteme
+sahipse ve biz onu sınıf nesnesinden çağırırsak A dan mı B den mi geleceği konusunda haliyle belirsizlik olacaktır. Bu sebepten 
+dolayı karmaşıklığı ve belirsizliği azaltmak için java çoklu kalıtımı desteklemez. 
+
+
+SORU 7. Build Tool nedir? Java ekosistemindeki build toolar neler açıklayın
+
+Microsoft Build Tools, Visual Studio projeleri için derleme aracıdır. Bu program ile Visual Studio
+ kullanmadan projelerimizi derleyebiliriz. Bu da demek oluyor ki projemizi başka bilgisayarda veya sistemlere 
+taşıdığımızda Microsoft Visual Studio yazılımını aramamıza gerek kalmayacak. Kurulumu son derece basit ve komut isteminden
+ birkaç parametre ile kolayca projelerimizi derleyebilir ve çıktı sonuçlarını görebiliriz.
+Java ekosisteminde 3 tane build tool vardır.Bunlar:
+-Maven
+-Ant
+-Grandle
+
+
+
+
+
+
